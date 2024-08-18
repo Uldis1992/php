@@ -1,11 +1,17 @@
 <?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
+// Define 2 strings
+$string1 = "Monday";
+$string2 = "Friday";
+
+// 1. Strings Concatenation
+$concatenatedString = $string1 . ", " . $string2 . "!";
+echo "Concatenated String: " . $concatenatedString . "\n";
+
+// 2. Convert to Uppercase
+$upperCaseString = strtoupper($concatenatedString);
+echo "Uppercase String: " . $upperCaseString . "\n";
+
+// 3. String length
+$stringLength = strlen($concatenatedString);
+echo "String length: " . $stringLength . "\n";
 ?>
-Something is wrong with the XAMPP installation :-(
